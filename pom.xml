@@ -21,6 +21,7 @@
         <module>spring-boot-01-start</module>
         <module>spring-boot-02-ioc</module>
         <module>spring-boot-03-bean</module>
+        <module>spring-boot-04-di</module>
     </modules>
 
 

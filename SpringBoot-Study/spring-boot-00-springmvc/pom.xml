@@ -5,6 +5,12 @@
 
     <modelVersion>4.0.0</modelVersion>
 
+    <parent>
+        <artifactId>SpringBoot-Study</artifactId>
+        <groupId>com.miguel</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
     <groupId>com.miguel</groupId>
     <artifactId>spring-boot-00-springmvc</artifactId>
     <version>1.0-SNAPSHOT</version>

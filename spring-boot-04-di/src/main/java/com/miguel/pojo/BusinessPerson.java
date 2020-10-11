@@ -21,6 +21,11 @@ public class BusinessPerson implements Person {
     @Qualifier("dog")
     private Animal animal = null;
 
+    // @Autowired与@Qualifier可以在构造方法的参数上标注
+    public BusinessPerson(@Autowired @Qualifier("dog") Animal animal) {
+        this.animal = animal;
+    }
+
     @Override
     public void service() {
         this.animal.use();

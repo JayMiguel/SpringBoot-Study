@@ -1,15 +1,15 @@
 package com.miguel;
 
+import com.miguel.config.AppConfig;
 import com.miguel.pojo.BusinessPerson;
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
-@SpringBootApplication
-public class SpringBootDi {
+
+public class DITest {
 
     public static void main(String[] args) {
-        ApplicationContext context = SpringApplication.run(SpringBootDi.class, args);
+        ApplicationContext context = new AnnotationConfigApplicationContext(AppConfig.class);
         BusinessPerson person = context.getBean(BusinessPerson.class);
         person.service();
     }
